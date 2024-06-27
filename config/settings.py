@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "home"
 
 EMAIL_BACKEND = ("django.core.mail.backends.%s.EmailBackend"
-                    % env.str("EMAIL_BACKEND", default="stmp"))
+                    % env.str("EMAIL_BACKEND", default="smtp"))
 
 EMAIL_HOST =  env.str("EMAIL_HOST")
 EMAIL_HOST_USER = env.str("EMAIL_HOST_USER")
